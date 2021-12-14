@@ -5,8 +5,8 @@
 
     require '../composer/phpmailer/vendor/autoload.php';
 
-    /*require '../composer/dompdf/vendor/autoload.php';
-    use Dompdf\Dompdf;*/
+    require '../composer/dompdf/vendor/autoload.php';
+    use Dompdf\Dompdf;
 
     ob_start();
     include( "../index.php" );
@@ -14,12 +14,12 @@
     ob_clean();     
 
     // instantiate and use the dompdf class
-    /*$dompdf = new Dompdf();
+    $dompdf = new Dompdf();
     $dompdf->loadHtml($content);
     $dompdf->setPaper('A4', 'landscape');
     $dompdf->render();
     //$dompdf->set_base_path('../assets/css/style.css');
-    $test = $dompdf->output();*/
+    $test = $dompdf->output();
 
     if (isset($_POST['sendBtn'])) {
 
@@ -45,12 +45,12 @@
             //$mail->addBCC('harissonefares4@gmail.com');
 
             //Attachments
-            //$mail->addStringAttachment($test, 'cvnkayoum.pdf');                 
+            $mail->addStringAttachment($test, 'cvnkayoum.pdf');                 
 
             //Content
             $mail->isHTML(true);                                  
             $mail->Subject = 'CV de Nkayoum au format PDF';
-            $mail->Body    = $content;
+            $mail->Body    = 'Envoie du cv au format pdf';
             $mail->AltBody = 'Send with PHPMailer';
 
             $mail->SMTPOptions = array(

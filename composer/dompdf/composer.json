@@ -1,5 +1,6 @@
 {
     "require": {
+        "ext-mbstring": "*",
         "dompdf/dompdf": "^1.1"
     }
 }

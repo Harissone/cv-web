@@ -15,7 +15,7 @@
 
     // instantiate and use the dompdf class
     $dompdf = new Dompdf();
-    $test = $dompdf->loadHtml($content);
+    $dompdf->loadHtml($content);
     $dompdf->setPaper('A4', 'landscape');
     $dompdf->render();
     //$dompdf->set_base_path('../assets/css/style.css');

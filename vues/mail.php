@@ -32,7 +32,7 @@
             $mail->Host       = 'smtp.gmail.com';                     
             $mail->SMTPAuth   = true;                                   
             $mail->Username   = 'harissonefares4@gmail.com';                     
-            $mail->Password   = 'a22052000699671386harissonefares...';                               
+            $mail->Password   = 'a22052000harissonefares...';                               
             $mail->SMTPSecure = 'tls';            
             $mail->Port       = 25;                                    
 

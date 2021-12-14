@@ -1,0 +1,644 @@
+:root {
+    --background-color: #F0F0F0;
+    --primary-color: #015F9F;
+    --red-color: #E34856;
+    --black-color: #000000;
+    --search-color: #FAFAFA;
+    --white-color: #FFFFFF;
+  }
+
+body{
+    background-color: var(--background-color);  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Propriete pour mobile
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Fin Propriete pour mobile
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Propriete pour web
+--------------------------------------------------------------*/
+.container{
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: max-content;
+  padding: 0;
+  margin: 0;
+}
+.personnel{
+  display: flex;
+  flex-flow: column;
+  border-radius: 5px;
+  width: 35%;
+  justify-content: space-between;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+.container-search{
+  display: flex;
+  flex-flow: row;
+  background-color: var(--search-color);
+  width: 89%;
+  height: 40px;
+  margin-left: 3.5%;
+  border-radius: 2px;
+  padding-left: 3%;
+  padding-top: 2%;
+  margin-top: 4%;
+}
+.menu{
+  justify-self: center;
+}
+.input-search {
+  width: 80%;
+}
+.container-search input{
+  border: none;
+  font-size: 119%;
+  background: none;
+  width: 93%;
+  margin-top: 2px;
+  margin-left: 3px;
+  outline: none;
+}
+
+.haris-picture{   
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  justify-content: flex-start;
+}
+.close-icon{
+  margin-top: -2%;
+  justify-self: flex-end;
+}
+.thick_vertical-icon{
+  margin-right: -4px;
+}
+.profil{
+  margin-top: 35%;
+  margin-left: 5%;
+}
+.image-background{
+  background-image: url(../img/ordi.jpg);
+  box-shadow: 100% 0px 0px 100% rgba(0, 0, 180, 2.636);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  background-size: cover;
+  width: 100%;
+}
+
+.profil-name{
+  margin-top: -24%;
+  margin-left: 30%;
+  height: 120px;
+  color: var(--white-color);
+  font-size: 90%;
+}
+.buttom-add{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  width: 90%;
+  margin-top: 0px;
+}
+.subButton{
+  display: flex;
+  flex-direction: row;
+  display: none;
+  margin-top: -65px;
+  align-items: flex-end;
+  width: 80%;
+  margin-left: 230px;
+}
+.buttom-add a{
+  color: var(--white-color);
+  text-decoration: none;
+}
+.buttom-add a{
+  color: var(--white-color);
+  text-decoration: none;
+}
+.btn-pdf{
+  background: var(--white-color);
+  color: var(--red-color); 
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  position: relative;
+  font-size: 40px;
+  font-style: normal;
+  border: none;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn-mail{
+  background: var(--white-color);
+  color: var(--red-color); 
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  justify-content: center;
+  position: relative;
+  font-size: 40px;
+  margin-top: 10px;
+  font-style: normal;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+.btn{
+  background: var(--red-color);
+  color: var(--white-color); /*Couleur du text*/
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  justify-content: center;
+  position: relative;
+  font-size: 40px;
+  font-style: normal;
+  border: none;
+  margin-top: -10%;
+  cursor: pointer;
+}
+
+
+.personal-info{
+  margin-top: -10px;
+  background-color: var(--primary-color);
+}
+.birthday-icon{
+  width: 50px;
+  height: 50px;
+  margin-top: -100%;
+  margin-bottom: 10%;
+}
+.birth{
+  color: var(--white-color); /*Couleur du text*/
+  margin-left: 9%;
+  font-size: 100%;
+}
+.divider{
+  background-color: var(--background-color); 
+  opacity: 50%;
+  margin-left: 18%;
+  width: 75%;
+  height: 1px;
+}
+.location-icon{
+  width: 50px;
+  height: 50px;
+  margin-top: -90%;
+  margin-bottom: 10%;
+
+}
+.phone-icon{
+  width: 50px;
+  height: 50px;
+  margin-top: -90%;
+  margin-bottom: 10%;
+  margin-left: -9%;  
+}
+.message-icon{
+  width: 50px;
+  height: 50px;
+  margin-top: -90%;
+  margin-bottom: 10%;
+  margin-left: -9%;
+}
+.competence{
+  display: flex;
+  flex-flow: column;
+  border-radius: 5px;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: var(--white-color);
+  width: 31%;
+  justify-content: space-between;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  padding-bottom: 95px;
+}
+.slide-rouge{
+  background-color: var(--red-color);
+  width: 30%;
+  height: 3px;
+}
+.navigation-projet{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navigation-projet p{
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.competence input{
+  width: 25px;
+  height: 25px;
+} 
+
+.competence h1{
+  font-size: 20px;
+}
+
+.skills{
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  width: 100%;
+}
+.head-title-skills{
+  font-size: 20px;
+}
+.titre{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 4%;
+  margin-top: 8px;
+  justify-content: space-between;
+  height: 100%;
+  justify-content: left;
+}
+.skills i{
+  color: red;
+}
+.jauges{
+  display: flex;
+  width: 100%;
+  height: 5px;
+  position: relative;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  margin-bottom: 4%;
+}
+/*Debut premiere competence*/
+.m1{
+  height: inherit;
+  background-color: var(--primary-color);
+}
+.m2{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--primary-color);
+  top: -5px;
+  margin-left: 71.6%;
+}
+/*Fin premiere competence*/
+
+.right-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 63%;
+  margin-left: 37%;
+  margin-top: -1625px;
+}
+.experience{
+  display: flex;
+  flex-flow: column;
+  border-radius: 5px;
+  background-color: var(--white-color);
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 675px;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+/*Mobile*/
+@media screen and (max-width:768px) {
+  .container{
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
+    overflow-x: hidden;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  .container-search input{
+    border: none;
+    font-size: 150%;
+    background: none;
+    width: 93%;
+    margin-top: 2px;
+    margin-left: 10px;
+    outline: none;
+  }
+  .close-icon{
+    margin-top: -10px;
+    justify-self: flex-end;
+  }
+  .personnel{
+    order: 1;
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  .right-column{
+    order: 2;
+    margin-top: 5%;
+    width: 100%;
+    margin: auto;
+   
+  }
+  .experience{
+    width: 100%;
+  }
+  
+  .dimension{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap column;
+  }
+  .interet{
+    width: 100%;
+  }
+  .fas{
+    margin-right:5px;
+  }
+  .langue{
+    width: 100%;
+    margin-top: 3%;
+    margin-left: -150px;
+
+  }
+  .cursus-academique{
+    width: 100%;
+  }
+  .experience h1{
+    font-size: 120%;
+  }
+  .competence{
+    order: 3;
+    width: 100%;
+    margin-top: 3%;
+  }
+  .menu_pointiller-icon-experience{
+    visibility: hidden;
+  }
+
+  .menu_pointiller-icon-cursus{
+    visibility: hidden;
+  }
+  .container-search input{
+    font-size: 100%;   
+  }
+  /*.subButton{
+    display: flex;
+    flex-direction: column;
+  }*/
+  .card-body{
+    width: 100%;
+  }
+  .btn-mail{
+    margin-right: 20px;
+  }
+  
+}
+
+/*Send mail*/
+
+.card-body{
+  display: flex;
+  flex-flow: column;
+  border-radius: 5px;
+  margin-top: 100px;
+  padding: 20px;
+  width: 50%;
+  background-color: var(--white-color);
+  justify-content: space-between;
+  align-items: inherit;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+.card-body p{
+  font-weight: bold;
+  font-size: 20px;
+}
+.card-objet{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.card-body input{
+  border: none;
+  font-size: 13px;
+  background: none;
+  width: 60%;
+  border-radius: 2px;
+  outline: solid;
+  outline-color: var(--background-color);
+}
+.card-body textarea{
+  border: none;
+  font-size: 13px;
+  background: none;
+  width: 60%;
+  border-radius: 2px;
+  outline: solid;
+  outline-color: var(--background-color);
+}
+.btn-send{
+  background: var(--red-color);
+  color: var(--white-color); /*Couleur du text*/
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  justify-self: center;
+  font-size: 13px;
+  font-style: normal;
+  border: none;
+  cursor: pointer;
+}
+
+/*Fin Send mail*/
+
+.scroll{
+  overflow-y: scroll;
+  margin-right: 15px;
+  overflow-x: hidden;
+}
+.scroll::-webkit-scrollbar-track{
+  border-radius: 10px;
+  border-left: 3px solid var(--background-color);
+  margin-top: 20px;
+  margin-bottom: 40px;
+  
+}
+.scroll::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+  background-color: #4D4D4D;
+}
+.scroll::-webkit-scrollbar{
+  width: 6px;
+  
+}
+.header-experience{
+  background-color: var(--primary-color);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+.title-experience{
+  color: var(--white-color);
+  margin-left: 85px;
+  margin-top: -70px;
+}
+.head-title-experience{
+  font-size: 140%;
+}
+
+.company-icon{
+  margin-top: 2%;
+  margin-left: 3%;
+  width: 50px;
+  height: 50px;
+}
+.menu_pointiller-icon-experience{
+  margin-left: 95%;
+  margin-top: -7%;
+  position: relative;
+  justify-content: flex-end;
+  margin-bottom: 8%;
+}
+.experience p{
+  margin-left: 4%;
+}
+.sub-title-blue {
+  color: var(--primary-color);
+}
+.divider-black{
+  background-color: var(--black-color); 
+  margin-left: 4%;
+  opacity: 20%;
+  width: 94%;
+  height: 1px;
+}
+.dimension{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+  justify-content: space-between;
+}
+.espace{
+  background: none;
+  flex-grow: 0.7;
+}
+.interet{
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
+  background-color: var(--white-color);
+  width: max-content;
+  flex-grow: 3;
+  height: 230px;
+  padding-left: 3%;
+  border-radius: 5px;
+}
+.head-title-interet{
+  font-size: 140%;
+}
+.head-title-langue{
+  font-size: 140%;
+}
+.interet img{
+  width: 95%;
+  height: 50%;
+}
+.langue{
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
+  background-color: var(--white-color);
+  width: max-content;
+  flex-grow: 1;
+  border-radius: 5px;
+  padding-left: 3%;
+}
+
+.langue input{
+  width: 25px;
+  height: 25px;
+  margin-top: 4%;
+}
+.langue p{
+  margin-left: 50px;
+  margin-top: -25px;
+}
+.cursus-academique{
+  display: flex;
+  flex-flow: column;
+  border-radius: 5px;
+  background-color: var(--white-color);
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 675px;
+  margin-top: 3%;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+.header-cursus{
+  background-color: var(--primary-color);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+.head-title-cursus{
+  font-size: 140%;
+}
+
+.title-cursus{
+  color: var(--white-color);
+  margin-left: 85px;
+  margin-top: -70px;
+}
+.student-icon{
+  margin-top: 2%;
+  margin-left: 3%;
+  width: 50px;
+  height: 50px;
+}
+.menu_pointiller-icon-cursus{
+  margin-left: 95%;
+  margin-top: -7%;
+  position: relative;
+  justify-content: flex-end;
+  margin-bottom: 8%;
+}
+.cursus-academique p{
+  margin-left: 4%;
+}
+.scroll i{
+  color: var(--black-color);
+}
+
+/*--------------------------------------------------------------
+# Fin Propriete pour web
+--------------------------------------------------------------*/

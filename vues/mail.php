@@ -21,51 +21,51 @@
     //$dompdf->set_base_path('../assets/css/style.css');
     $test = $dompdf->output();
 
-if (isset($_POST['sendBtn'])) {
+    if (isset($_POST['sendBtn'])) {
 
-    $mail = new PHPMailer(true);
+        $mail = new PHPMailer(true);
 
-    try {
-        
-        $mail->SMTPDebug = 1;                      
-        $mail->isSMTP();                                            
-        $mail->Host       = 'smtp.gmail.com';                     
-        $mail->SMTPAuth   = true;                                   
-        $mail->Username   = 'harissonefares4@gmail.com';                     
-        $mail->Password   = 'a22052000699671386harissonefares...';                               
-        $mail->SMTPSecure = 'tls';            
-        $mail->Port       = 25;                                    
+        try {
+            
+            $mail->SMTPDebug = 1;                      
+            $mail->isSMTP();                                            
+            $mail->Host       = 'smtp.gmail.com';                     
+            $mail->SMTPAuth   = true;                                   
+            $mail->Username   = 'harissonefares4@gmail.com';                     
+            $mail->Password   = 'a22052000699671386harissonefares...';                               
+            $mail->SMTPSecure = 'tls';            
+            $mail->Port       = 25;                                    
 
-        //Recipients
-        $mail->setFrom('harissonefares4@gmail.com', 'Nkayoum');
-        $mail->addAddress($_POST['send'], 'Mr Essono Junior');     
-        //$mail->addAddress('ellen@example.com');               
-        //$mail->addReplyTo('harissonefares4@gmail.com', 'Information');
-        //$mail->addCC('harissonefares4@gmail.com');
-        //$mail->addBCC('harissonefares4@gmail.com');
+            //Recipients
+            $mail->setFrom('harissonefares4@gmail.com', 'Nkayoum');
+            $mail->addAddress($_POST['send'], 'Mr Essono Junior');     
+            //$mail->addAddress('ellen@example.com');               
+            //$mail->addReplyTo('harissonefares4@gmail.com', 'Information');
+            //$mail->addCC('harissonefares4@gmail.com');
+            //$mail->addBCC('harissonefares4@gmail.com');
 
-        //Attachments
-        $mail->addStringAttachment($test, 'cvnkayoum.pdf');                 
+            //Attachments
+            $mail->addStringAttachment($test, 'cvnkayoum.pdf');                 
 
-        //Content
-        $mail->isHTML(true);                                  
-        $mail->Subject = 'CV de Nkayoum au format PDF';
-        $mail->Body    = 'Envoie du cv au format PDF !';
-        $mail->AltBody = 'Send with PHPMailer';
+            //Content
+            $mail->isHTML(true);                                  
+            $mail->Subject = 'CV de Nkayoum au format PDF';
+            $mail->Body    = 'Envoie du cv au format PDF !';
+            $mail->AltBody = 'Send with PHPMailer';
 
-        $mail->SMTPOptions = array(
-            'ssl' => array(
-            'verify_peer' => false,
-            'verify_peer_name' => false,
-            'allow_self_signed' => true
-            )
-            );
-        $mail->send();
-        echo 'L\'email à été envoyer !';
-    } catch (Exception $e) {
-        echo "L'email n'a pas pu etre envoyer . Mailer Error: {$mail->ErrorInfo}";
+            $mail->SMTPOptions = array(
+                'ssl' => array(
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+                )
+                );
+            $mail->send();
+            echo 'L\'email à été envoyer !';
+        } catch (Exception $e) {
+            echo "L'email n'a pas pu etre envoyer . Mailer Error: {$mail->ErrorInfo}";
+        }
     }
-}
 ?>
 
 <!DOCTYPE html>

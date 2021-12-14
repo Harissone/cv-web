@@ -188,7 +188,7 @@
                 </div>
                 <div class="subButton" id="divButton">
                     <button class="btn-pdf" name="btnpdf" id="btn-pdf"><img src="../assets/img/export_pdf.png" /></button>
-                    <a href="vues/sendmail.php"><button class="btn-mail" id="btn-mail"><img src="../assets/img/composing_mail.png" /></button></a>
+                    <a href="vues/mail.php"><button class="btn-mail" id="btn-mail"><img src="../assets/img/composing_mail.png" /></button></a>
                 </div>
                 <div class="birthday birthday-mobile">
                     <div class="birth birth-mobile">

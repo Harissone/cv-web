@@ -1,5 +1,5 @@
 <?php
-    require("../database/connexion.php");
+    /*require("../database/connexion.php");
     session_start();
     $_SESSION["username"]==null;
     if(isset($_POST["Username"]) && isset($_POST["Password"])){
@@ -20,5 +20,5 @@
     else{
         session_destroy();
         header("Location:../vues/login.php");
-    }
+    }*/
 ?>

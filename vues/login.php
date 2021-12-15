@@ -1,10 +1,10 @@
 <?php
-    session_start();
+    /*session_start();
     if($_SESSION["username"]=null){
         session_destroy();
         echo"<font color='red'><b>Parametres incorrets</b></font>";
         header("Location:login.php");   
-    }
+    }*/
 ?>
 <!DOCTYPE html>
 <html lang="en">

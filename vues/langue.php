@@ -1,6 +1,6 @@
 <?php
 
-    class Langues
+    class Langues extends Competences
     {
         public function __construct(protected $langue)
         {

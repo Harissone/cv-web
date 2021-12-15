@@ -10,7 +10,7 @@
 
     ob_start();
     include( "../index.php" );
-    $content = ob_get_contents();
+    @$content = ob_get_contents();
     ob_clean();     
 
     // instantiate and use the dompdf class
@@ -50,7 +50,7 @@
             //Content
             $mail->isHTML(true);                                  
             $mail->Subject = 'CV de Nkayoum au format PDF';
-            $mail->Body    = $content;
+            $mail->Body    = @$content;
             $mail->AltBody = 'Send with PHPMailer';
 
             $mail->SMTPOptions = array(

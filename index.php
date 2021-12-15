@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if($_SESSION["username"]==null){
+        session_destroy();
+        echo"<font color='red'><b> Parametres incorrects </b></font>";
+        header("Location:vues/login.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

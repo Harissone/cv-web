@@ -70,6 +70,9 @@
         function get_matrimonial(){
             return $this->matrimonial;
         }
+        function get_sante(){
+            return $this->sante;
+        }
         //Fin fonction pour residence utilisateur
 
         //Debut fonction pour contact utilisateur
@@ -173,8 +176,8 @@
                     <img src='.$this->get_photoProfil().' class="haris-picture" />
                 </div>
                 <div class="profil-name profil-name-mobile">
-                    <h1 class="name name-mobile">'.$this->nomUtilisateur.'</h1>
-                    <p class="jobs jobs-mobile">'.$this->fonctionEntreprise.'</p>
+                    <h1 class="name name-mobile">'.$this->get_nomUtilisateur().'</h1>
+                    <p class="jobs jobs-mobile">'.$this->get_fonctionEntreprise().'</p>
                 </div>
             </div> 
             <!-- Fin Container du profil -->               
@@ -192,42 +195,42 @@
                 </div>
                 <div class="birthday birthday-mobile">
                     <div class="birth birth-mobile">
-                        <p class="birth birth-mobile">'.$this->anneeNaissance.'</p>
-                        <p class="birth birth-mobile">'.$this->origine.'</p>
-                        <p class="birth birth-mobile">'.$this->matrimonial.'-'.$this->sante.'</p>
+                        <p class="birth birth-mobile">'.$this->get_anneeNaissance().'</p>
+                        <p class="birth birth-mobile">'.$this->get_origine().'</p>
+                        <p class="birth birth-mobile">'.$this->get_matrimonial().'-'.$this->get_sante().'</p>
                     </div>            
                     <img src="../assets/img/birthday.png" class="birthday-icon birthday-icon-mobile" />
                 </div>
                 <div class="divider divider-mobile"></div>
                 <div class="birthday residence-mobile">
                     <div class="birth birth-mobile">
-                        <p class="birth birth-mobile">'.$this->residences.'</p>
-                        <p class="birth birth-mobile">'.$this->residenceVille.'</p>
-                        <p class="birth birth-mobile">'.$this->map.'</p>
+                        <p class="birth birth-mobile">'.$this->get_residences().'</p>
+                        <p class="birth birth-mobile">'.$this->get_residenceVille().'</p>
+                        <p class="birth birth-mobile">'.$this->get_map().'</p>
                     </div> 
                         <img src="../assets/img/location.png" class="location-icon" />
                 </div>
                 <div class="divider divider-mobile"></div>
                 <div class="birth phone-mobile">
                     <div class="call call-mobile">
-                    <p class="birth birth-mobile">'.$this->numeroTelephone.'</p>
-                    <p class="birth media-mobile">'.$this->reseauSociaux.'</p>
+                    <p class="birth birth-mobile">'.$this->get_numeroTelephone().'</p>
+                    <p class="birth media-mobile">'.$this->get_reseauSociaux().'</p>
                     </div>    
                         <img src="../assets/img/phone.png" class="phone-icon" />
                 </div>
                 <div class="divider divider-mobile"></div>
                 <div class="birth mail-mobile">
                     <div class="couriel couriel-mobile">
-                    <p class="birth birth-mobile">'.$this->addresseMail.'</p>
-                    <p class="birth birth-mobile">'.$this->reseauMail.'</p>
+                    <p class="birth birth-mobile">'.$this->get_addresseMaile().'</p>
+                    <p class="birth birth-mobile">'.$this->get_reseauMail().'</p>
                     </div>
                         <img src="../assets/img/message.png" class="message-icon" />
                 </div>
                 
                 <div class="navigation-projet">
-                    <p>'.$this->nbreProjet.'</p>
-                    <p>'.$this->nbreContrat.'</p>
-                    <p>'.$this->nbreAnneeExperience.'</p>
+                    <p>'.$this->get_nbreProjet().'</p>
+                    <p>'.$this->get_nbreContrat().'</p>
+                    <p>'.$this->get_nbreAnneeExperience().'</p>
                 </div>
                 <div class="slide-rouge"></div>      
             </div>
